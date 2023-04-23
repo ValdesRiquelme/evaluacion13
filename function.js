@@ -121,3 +121,10 @@ $(document).ready(function(){
       });
   });
 });
+// Oculta el carrusel al cargar la página
+document.getElementById('myCarousel').style.display = 'none';
+
+// Muestra el carrusel cuando se hace clic en el enlace "Sobre nosotros"
+document.querySelector('.nav-link').addEventListener('click', function() {
+  document.getElementById('myCarousel').style.display = 'block';
+});

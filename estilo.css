@@ -159,3 +159,40 @@ label{
 .navbar-light .navbar-nav .show > .nav-link {
   color: white;
 }
+  /* Centra las imágenes en el carrusel */
+  .carousel-inner .carousel-item img {
+    display: block;
+    margin: 0 auto;
+    max-height: 400px; /* Establece la altura máxima para las imágenes */
+    object-fit: cover; /* Ajusta el tamaño de las imágenes para cubrir el espacio */
+  }
+  
+  /* Fondo negro y texto blanco en el carrusel */
+  .carousel-inner .carousel-item {
+    position: relative; /* Establece la posición relativa para el contenedor del item */
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centra el texto verticalmente */
+    padding: 50px; /* Añade espacio interno para el texto */
+  }
+  
+  /* Estilo para el título del carrusel */
+  .carousel-inner .carousel-item h3 {
+    font-size: 24px; /* Tamaño de fuente para el título */
+    font-weight: bold; /* Negrita para el título */
+    position: absolute; /* Establece la posición absoluta para el título */
+    top: 0; /* Coloca el título en la parte superior del item */
+    left: 0; /* Coloca el título en la parte izquierda del item */
+    right: 0; /* Coloca el título en la parte derecha del item */
+    margin-top: 20px; /* Añade margen superior para separar el título de la parte superior del item */
+  }
+  
+  /* Estilo para el texto del carrusel */
+  .carousel-inner .carousel-item p {
+    font-size: 18px; /* Tamaño de fuente para el texto */
+    position: absolute; /* Establece la posición absoluta para el texto */
+    bottom: 0; /* Coloca el texto en la parte inferior del item */
+    left: 0; /* Coloca el texto en la parte izquierda del item */
+    right: 0; /* Coloca el texto en la parte derecha del item */
+    margin-bottom: 20px; /* Añade margen inferior para separar el texto de la parte inferior del item */
+  }
