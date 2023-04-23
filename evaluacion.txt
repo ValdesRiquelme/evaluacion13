@@ -1,0 +1,120 @@
+evaluacion12 
+
+ignac@DESKTOP-KPEE00N MINGW64 ~/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO (master)
+$ git init
+Initialized empty Git repository in C:/Users/ignac/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO/.git/
+
+ignac@DESKTOP-KPEE00N MINGW64 ~/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO (master)
+$ git add .
+
+ignac@DESKTOP-KPEE00N MINGW64 ~/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   bebidas.jpg
+        new file:   chorillana.jpg
+        new file:   estilo.css
+        new file:   fondo.jpg
+        new file:   function.js
+        new file:   index.html
+        new file:   mojito.jpg
+        new file:   n.png
+        new file:   shop.jpeg
+        new file:   tablas.jpg
+        new file:   vino.jpg
+
+
+ignac@DESKTOP-KPEE00N MINGW64 ~/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO (master)
+$ git commit -m "primer commit"
+[master (root-commit) 0594752] primer commit
+ 11 files changed, 489 insertions(+)
+ create mode 100644 bebidas.jpg
+ create mode 100644 chorillana.jpg
+ create mode 100644 estilo.css
+ create mode 100644 fondo.jpg
+ create mode 100644 function.js
+ create mode 100644 index.html
+ create mode 100644 mojito.jpg
+ create mode 100644 n.png
+ create mode 100644 shop.jpeg
+ create mode 100644 tablas.jpg
+ create mode 100644 vino.jpg
+
+ignac@DESKTOP-KPEE00N MINGW64 ~/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO (master)
+$ git log
+commit 0594752c2ebf626912d58ca32aca31dc08573011 (HEAD -> master)
+Author: Ignacio <i.valdes01@ufromail.cl>
+Date:   Sat Apr 22 21:58:22 2023 -0400
+
+    primer commit
+
+ignac@DESKTOP-KPEE00N MINGW64 ~/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO (master)
+$
+ignac@DESKTOP-KPEE00N MINGW64 ~/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   estilo.css
+        modified:   function.js
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        IMG1.jpg
+        IMG2.jpg
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ignac@DESKTOP-KPEE00N MINGW64 ~/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO (master)
+$
+ignac@DESKTOP-KPEE00N MINGW64 ~/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO (master)
+$ git add .
+
+ignac@DESKTOP-KPEE00N MINGW64 ~/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   IMG1.jpg
+        new file:   IMG2.jpg
+        modified:   estilo.css
+        modified:   function.js
+        modified:   index.html
+
+
+ignac@DESKTOP-KPEE00N MINGW64 ~/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO (master)
+ignac@DESKTOP-KPEE00N MINGW64 ~/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO (master)
+$ git commit -m "segundo commit"
+[master 31eef01] segundo commit
+ 5 files changed, 91 insertions(+), 38 deletions(-)
+ create mode 100644 IMG1.jpg
+ create mode 100644 IMG2.jpg
+
+ignac@DESKTOP-KPEE00N MINGW64 ~/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO (master)
+$ git log
+commit 31eef0185f29ca6cba6e4009f31990577d39a584 (HEAD -> master)
+Author: Ignacio <i.valdes01@ufromail.cl>
+Date:   Sat Apr 22 22:53:17 2023 -0400
+
+    segundo commit
+
+commit 0594752c2ebf626912d58ca32aca31dc08573011
+Author: Ignacio <i.valdes01@ufromail.cl>
+Date:   Sat Apr 22 21:58:22 2023 -0400
+
+    primer commit
+
+ignac@DESKTOP-KPEE00N MINGW64 ~/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO (master)
+$
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ignac@DESKTOP-KPEE00N MINGW64 ~/OneDrive/Escritorio/Bootcamp/MATERIAL COMPLEMENTARIO (master)
+$
