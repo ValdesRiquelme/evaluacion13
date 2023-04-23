@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIMRODEL Restaurant Y Pub</title>
+    <link rel="stylesheet"
+    href="estilo.css">
+    <link rel="icon" type="image/png" href="n.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.1.min.js" integrity="sha256-UnTxHm+zKuDPLfufgEMnKGXDl6fEIjtM+n1Q6lL73ok=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="arriba .col-lg-12">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="n.png"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Nuestros productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#titulo2">Comuniquemonos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#reserva">Reserva</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <br>
+    <h1>Nimrodel Pub restaurant</h1>
+    <hr>
+    <h2>Destacados de la semana</h2>
+    <div class="todo"> 
+        <div class="card" style="width: 18rem;">
+            <img src="bebidas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <button class="close">x</button>
+                <h5>GASEOSAS</h4>
+              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="tablas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <button class="close">x</button>
+                <h5>TABLAS</h4>
+              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="shop.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <button class="close">x</button>
+                <h5>SHOP CERVEZA</h4>
+              <p class="card-text">Un texto de ejemplo rápido para colocal cerca del título de la tarjeta y componer la mayor parte del contenido de la tarjeta.</p>
+            </div>
+          </div>
+    </div>
+    <form class="container p-5 m-5 bg-dark row g-3" id="miFormulario">
+      <h1 class="container text-white">Comuniquemonos</h1>
+      <div class="col-md-12">
+        <label for="inputEmail4" class="form-label text-white">Nombre</label>
+        <input type="text" class="form-control text-dark" id="inputEmail4" value="nombre predeterminado" required>
+      </div>
+      <div class="col-md-12">
+        <label for="inputPassword4" class="form-label text-white">Coreeo</label>
+        <input type="email" class="form-control text-black" value="correopredeterminado@gmail.cl" required id="inputPassword4">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label text-white">Telefono</label>
+        <input type="number" class="form-control text-dark" value="123456789" required id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="col-12">
+        <label for="lista" class="text-white">Motivo</label>
+        <br>
+        <input type="text" name="especialidad" list="especialidad" required>
+        <br>
+        <datalist id="especialidad">
+            <option value="Felicitaciones">Felicitaciones</option>
+            <option value="Reclamos">Reclamos</option>
+            <option value="Consultas">Consultas</option>
+            <option value="Sugerecias">Sugerecias</option>
+        </datalist>
+      </div>
+      <br>
+      <textarea class="container col-6 p-" required cols="30" rows="10"></textarea>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+    <br>
+
+    <form class="container p-5 m-5 bg-dark row g-3" id="miFormulario2">
+      <h1 class="container text-white">Reserva</h1>
+      <div class="col-md-12">
+        <label for="inputEmail4" class="form-label text-white">Nombre</label>
+        <input type="text" class="form-control text-dark" value="nombre predeterminado" required id="inputEmail4">
+      </div>
+      <div class="col-md-12">
+        <label for="inputPassword4" class="form-label text-white">Correo</label>
+        <input type="email" class="form-control text-black" value="correopredeterminado@gmail.com" required id="inputPassword4">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label text-white">Telefono</label>
+        <input type="number" class="form-control text-dark" value="123456789" required id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label text-white">Fecha</label>
+        <input type="date" class="form-control text-dark" required id="inputAddress2" placeholder="Apartment, studio, or floor">
+      </div>
+      <div class="col-md-12">
+        <label for="inputCity" class="form-label text-white">Hora</label>
+        <input type="time" class="form-control" required id="inputCity">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label text-white">Cantidad de asistentes</label>
+        <input type="number" class="form-control text-dark" required id="inputAddress" placeholder="Asistentes">
+      </div>
+      <br>
+      <div class="col-12">
+        <br>
+        <button type="submit" class="btn btn-primary">Reservar</button>
+      </div>
+    </form>
+    <div id="carouselExampleFade" class="container carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="vino.jpg" class="d-block w-100" alt="vino">
+        </div>
+        <div class="carousel-item">
+          <img src="chorillana.jpg" class="d-block w-100" alt="chorillana">
+        </div>
+        <div class="carousel-item">
+          <img src="mojito.jpg" class="d-block w-100" alt="mojito">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+<!---
+    </form>
+    <br>
+    <br>
+    <div id="reserva">
+        <h1 id="titulo3">Reserva</h1>
+        <label for="nombre">NOMBRE</label>
+        <input type="text" name="nombre" id="nombre" required>
+        <br>
+        <br>
+        <label for="email">CORREO</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <br>
+        <label for="number">Teléfono</label>
+        <input type="number" name="number" id="number" required>
+        <br>
+        <br>
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha" required>
+        <br>
+        <br>
+        <label for="hora">Hora</label>
+        <input type="time" name="hora" id="hora" required>
+        <br>
+        <br>
+        <label for="asistentes">Cantidad de asistentes</label>
+        <br>
+        <input type="number" name="asistentes" id="asistentes" required>
+        <br>
+        <br>
+        <button type="submit">Reservar</button>
+        <a href="index.html">Regreso</a>
+    </div>
+    </div>-->
+    <footer>
+    <p id="pie">Todos los derechos reservados &reg;</p>
+    </footer>
+    <script src="function.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
